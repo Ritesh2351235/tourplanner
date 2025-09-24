@@ -63,10 +63,10 @@ export default function FAQs() {
 
         <div className="text-center pt-8">
           <p className="text-muted-foreground mb-4">
-            Still have questions? We're here to help!
+            Still have questions? We&apos;re here to help!
           </p>
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
             className="inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
           >
             Contact Support

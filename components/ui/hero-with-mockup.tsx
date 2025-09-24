@@ -2,14 +2,17 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Mockup } from "@/components/ui/mockup"
 import { Glow } from "@/components/ui/glow"
-import { Github } from "lucide-react"
+import Image from 'next/image'
 
-const GitHubIcon = Github
 
 interface HeroWithMockupProps {
   title: string | React.ReactNode
   description: string
   primaryCta?: {
+    text: string
+    href: string
+  }
+  secondaryCta?: {
     text: string
     href: string
   }
@@ -29,6 +32,7 @@ export function HeroWithMockup({
     text: "Get Started",
     href: "/get-started",
   },
+  secondaryCta,
   mockupImage,
   className,
 }: HeroWithMockupProps) {
@@ -75,17 +79,32 @@ export function HeroWithMockup({
             className="relative z-10 flex justify-center 
             animate-appear opacity-0 [animation-delay:300ms]"
           >
-            <Button
-              asChild
-              size="lg"
-              className={cn(
-                "bg-black text-white",
-                "px-8 py-3 text-base font-medium",
-                "rounded-md",
+            <div className="flex gap-4">
+              <Button
+                asChild
+                size="lg"
+                className={cn(
+                  "bg-black text-white",
+                  "px-8 py-3 text-base font-medium",
+                  "rounded-md",
+                )}
+              >
+                <a href={primaryCta.href}>{primaryCta.text}</a>
+              </Button>
+              {secondaryCta && (
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className={cn(
+                    "px-8 py-3 text-base font-medium",
+                    "rounded-md",
+                  )}
+                >
+                  <a href={secondaryCta.href}>{secondaryCta.text}</a>
+                </Button>
               )}
-            >
-              <a href={primaryCta.href}>Get Started</a>
-            </Button>
+            </div>
           </div>
 
           {/* Mockup */}
@@ -97,11 +116,13 @@ export function HeroWithMockup({
                 "border-brand/10 dark:border-brand/5",
               )}
             >
-              <img
-                {...mockupImage}
+              <Image
+                src={mockupImage.src}
+                alt={mockupImage.alt}
+                width={mockupImage.width}
+                height={mockupImage.height}
                 className="w-full h-auto"
-                loading="lazy"
-                decoding="async"
+                priority
               />
             </Mockup>
           </div>

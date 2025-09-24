@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const HeroSection = () => {
   return (
@@ -49,82 +50,82 @@ export const HeroSection = () => {
                   Complete tech stack included
                 </p>
                 <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 max-w-5xl mx-auto">
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300 dark:invert"
                     src="/icons/nextjs.svg"
                     alt="Next.js"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300"
                     src="/icons/supabase.png"
                     alt="Supabase"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300 dark:invert"
                     src="/icons/prisma.svg"
                     alt="Prisma"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300 block dark:hidden"
                     src="/icons/Tailwindlogo.png"
                     alt="Tailwind CSS"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-12 w-auto opacity-70 hover:opacity-100 transition-all duration-300 hidden dark:block brightness-200 contrast-125"
                     src="/icons/tailwind-dark.png"
                     alt="Tailwind CSS"
-                    height="48"
-                    width="auto"
+                    height={48}
+                    width={48}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300 dark:invert"
                     src="/icons/shadcn.png"
                     alt="shadcn/ui"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300"
                     src="/icons/stripe.png"
                     alt="Stripe"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300"
                     src="/icons/postgres.png"
                     alt="PostgreSQL"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300 block dark:hidden"
                     src="/icons/clerk.png"
                     alt="Clerk"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300 hidden dark:block"
                     src="/icons/clerk-dark.png"
                     alt="Clerk"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
-                  <img
+                  <Image
                     className="h-10 w-auto opacity-70 hover:opacity-100 transition-all duration-300 dark:invert"
                     src="/icons/resend-logo.png"
                     alt="Resend"
-                    height="40"
-                    width="auto"
+                    height={40}
+                    width={40}
                   />
                 </div>
               </div>

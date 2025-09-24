@@ -90,7 +90,7 @@ export default function Footer() {
         </Link>
         <p className="bg-transparent text-center text-xs leading-4 text-muted-foreground md:text-left">
           Welcome to TourPlanner, where tour planning meets data-driven insights.
-          We're passionate about helping artists and promoters plan successful tours.
+          We&apos;re passionate about helping artists and promoters plan successful tours.
           Our mission is to provide the best cities, venues, and ticket ranges using
           fanbase and market insights, so every show is a success. Built with Next.js 15,
           React 19, and modern web technologies.

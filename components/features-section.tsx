@@ -3,7 +3,8 @@
 import * as React from 'react'
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { ArrowUp, Code2, Plus, Sparkles, Terminal, Layers, Zap } from 'lucide-react'
+import { Code2, Plus, Terminal, Layers, Zap } from 'lucide-react'
+import Image from 'next/image'
 
 export default function FeaturesSection() {
   return (
@@ -15,12 +16,13 @@ export default function FeaturesSection() {
           </h2>
           <div className="@container mt-12 space-y-12">
             <Card
-              variant="soft"
-              className="relative overflow-hidden p-0 sm:col-span-2">
-              <img
+              className="relative overflow-hidden p-0 sm:col-span-2 bg-background/80 backdrop-blur-sm">
+              <Image
                 src="https://images.unsplash.com/photo-1635776062043-223faf322554?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
+                alt="Developer tools illustration"
                 className="absolute inset-0 size-full object-cover"
+                fill
+                priority
               />
               <div className="relative m-auto max-w-md p-4 sm:p-12">
                 <DeveloperToolsIllustration />
