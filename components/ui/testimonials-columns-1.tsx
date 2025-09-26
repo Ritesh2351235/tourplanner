@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from 'next/image';
+import { User } from "lucide-react";
 
 export const TestimonialsColumn = (props: {
   className?: string;
@@ -25,17 +26,13 @@ export const TestimonialsColumn = (props: {
         {[
           ...new Array(2).fill(0).map((_, index) => (
             <React.Fragment key={index}>
-              {props.testimonials.map(({ text, image, name, role }, i) => (
+              {props.testimonials.map(({ text, name, role }, i) => (
                 <div className="p-10 rounded-3xl border shadow-lg shadow-primary/10 max-w-xs w-full" key={i}>
                   <div>{text}</div>
                   <div className="flex items-center gap-2 mt-5">
-                    <Image
-                      width={40}
-                      height={40}
-                      src={image}
-                      alt={name}
-                      className="h-10 w-10 rounded-full"
-                    />
+                    <div className="h-10 w-10 rounded-full bg-muted flex items-center justify-center">
+                      <User className="h-5 w-5 text-muted-foreground" />
+                    </div>
                     <div className="flex flex-col">
                       <div className="font-medium tracking-tight leading-5">{name}</div>
                       <div className="leading-5 opacity-60 tracking-tight">{role}</div>
@@ -54,55 +51,46 @@ export const TestimonialsColumn = (props: {
 const testimonials = [
   {
     text: "Touringengine transformed our tour planning process. The venue insights and market data saved us weeks of research time.",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
     name: "Sarah Chen",
     role: "Frontend Developer",
   },
   {
     text: "The shadcn/ui components are perfectly integrated. Our team was productive from day one with the clean TypeScript setup.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
     name: "Marcus Johnson",
     role: "Tech Lead",
   },
   {
     text: "Amazing developer experience! The dark mode support and responsive design patterns made our app shine instantly.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
     name: "Elena Rodriguez",
     role: "UI/UX Designer",
   },
   {
     text: "Touringengine's data-driven approach helped us plan our tour 3x faster. The venue recommendations were exactly what we needed.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
     name: "David Kim",
     role: "Startup Founder",
   },
   {
     text: "The code quality and documentation are outstanding. Perfect for scaling our development team efficiently.",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
     name: "Rachel Thompson",
     role: "Engineering Manager",
   },
   {
     text: "Best React starter I've used. The build optimization and deployment setup work flawlessly out of the box.",
-    image: "https://randomuser.me/api/portraits/men/6.jpg",
     name: "Alex Park",
     role: "DevOps Engineer",
   },
   {
     text: "Our artist clients now have data-backed tour plans. Touringengine is a game-changer for booking agencies.",
-    image: "https://randomuser.me/api/portraits/women/7.jpg",
     name: "Jessica Miller",
     role: "Agency Owner",
   },
   {
     text: "The TypeScript integration and component patterns helped our junior developers learn modern React quickly.",
-    image: "https://randomuser.me/api/portraits/men/8.jpg",
     name: "Ryan Walsh",
     role: "Senior Developer",
   },
   {
     text: "Switching to Touringengine reduced our failed shows by 40%. The market insights made all the difference.",
-    image: "https://randomuser.me/api/portraits/women/9.jpg",
     name: "Lisa Chang",
     role: "QA Lead",
   },

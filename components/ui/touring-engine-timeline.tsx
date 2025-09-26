@@ -10,7 +10,7 @@ export function TouringengineTimeline() {
         <div>
           <div className="w-full max-w-6xl mx-auto">
             <Image
-              src="/Touringengine-light.png"
+              src="/touringengine-light.png"
               alt="Why Touringengine?"
               width={1200}
               height={900}
@@ -18,7 +18,7 @@ export function TouringengineTimeline() {
               priority
             />
             <Image
-              src="/Touringengine.png"
+              src="/touringengine.png"
               alt="Why Touringengine?"
               width={1200}
               height={900}
