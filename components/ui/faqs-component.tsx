@@ -7,18 +7,18 @@ export default function FAQs() {
   const faqItems = [
     {
       id: 'item-1',
-      question: 'How does TourPlanner help plan my tour?',
-      answer: 'TourPlanner uses your fanbase data and market insights to recommend the best cities, venues, and ticket pricing strategies. We analyze streaming data, social media presence, and local market conditions to maximize your tour success.',
+      question: 'How does Touringengine help plan my tour?',
+      answer: 'Touringengine uses your fanbase data and market insights to recommend the best cities, venues, and ticket pricing strategies. We analyze streaming data, social media presence, and local market conditions to maximize your tour success.',
     },
     {
       id: 'item-2',
-      question: 'What data sources does TourPlanner use?',
-      answer: 'TourPlanner integrates with major streaming platforms, social media APIs, venue databases, and local market analytics to provide comprehensive insights for tour planning decisions.',
+      question: 'What data sources does Touringengine use?',
+      answer: 'Touringengine integrates with major streaming platforms, social media APIs, venue databases, and local market analytics to provide comprehensive insights for tour planning decisions.',
     },
     {
       id: 'item-3',
-      question: 'Can I use TourPlanner for multiple artists?',
-      answer: 'Absolutely! TourPlanner is perfect for booking agencies, promoters, and management companies handling multiple artists. Each artist profile gets personalized recommendations based on their unique fanbase.',
+      question: 'Can I use Touringengine for multiple artists?',
+      answer: 'Absolutely! Touringengine is perfect for booking agencies, promoters, and management companies handling multiple artists. Each artist profile gets personalized recommendations based on their unique fanbase.',
     },
     {
       id: 'item-4',
@@ -28,12 +28,12 @@ export default function FAQs() {
     {
       id: 'item-5',
       question: 'Do you provide ticket pricing insights?',
-      answer: 'Yes! TourPlanner analyzes local market conditions, venue capacity, demand patterns, and competitor pricing to suggest optimal ticket price ranges that maximize both attendance and revenue.',
+      answer: 'Yes! Touringengine analyzes local market conditions, venue capacity, demand patterns, and competitor pricing to suggest optimal ticket price ranges that maximize both attendance and revenue.',
     },
     {
       id: 'item-6',
-      question: 'What makes TourPlanner different from other tools?',
-      answer: 'TourPlanner combines fanbase analytics with real-time market data to provide personalized recommendations. Our focus on data-driven decisions helps ensure every show is a success, not just a booking.',
+      question: 'What makes Touringengine different from other tools?',
+      answer: 'Touringengine combines fanbase analytics with real-time market data to provide personalized recommendations. Our focus on data-driven decisions helps ensure every show is a success, not just a booking.',
     },
   ]
 
@@ -44,7 +44,7 @@ export default function FAQs() {
           <h2 className="text-foreground text-balance text-3xl font-semibold md:text-4xl">
             <span className="text-muted-foreground">Frequently asked questions about</span>
             <br />
-            <span className="font-serif italic">TourPlanner</span>
+            <span className="font-serif italic">Touringengine</span>
           </h2>
         </div>
 

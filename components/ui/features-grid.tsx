@@ -1,6 +1,6 @@
 'use client'
 
-import { MapPin, Building2, TrendingUp, Bell, Users, BarChart3 } from 'lucide-react'
+import { TrendingUp, Activity, Zap, MapPin, Bell, Target } from 'lucide-react'
 
 export function FeaturesGrid() {
   return (
@@ -17,45 +17,45 @@ export function FeaturesGrid() {
         <div className="relative mx-auto grid max-w-2xl lg:max-w-4xl divide-x divide-y border *:p-12 sm:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <MapPin className="size-4" />
-              <h3 className="text-sm font-medium">Find the right cities</h3>
-            </div>
-            <p className="text-sm text-muted-foreground">See where your fans are most likely to buy tickets.</p>
-          </div>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <Building2 className="size-4" />
-              <h3 className="text-sm font-medium">Pick the right venues</h3>
-            </div>
-            <p className="text-sm text-muted-foreground">Get venue size and ticket price suggestions that match your stage of growth.</p>
-          </div>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
               <TrendingUp className="size-4" />
-              <h3 className="text-sm font-medium">Track your growth</h3>
+              <h3 className="text-sm font-medium">Tour Growth Path</h3>
             </div>
-            <p className="text-sm text-muted-foreground">Visualize your journey — from local gigs to global tours.</p>
+            <p className="text-sm text-muted-foreground">Visualize artist expansion with peer benchmarks and regional insights.</p>
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <Activity className="size-4" />
+              <h3 className="text-sm font-medium">Live Tour Tracking</h3>
+            </div>
+            <p className="text-sm text-muted-foreground">Real-time routing, venue capacity, and ticket sales status.</p>
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <Target className="size-4" />
+              <h3 className="text-sm font-medium">Fan Conversion Analytics</h3>
+            </div>
+            <p className="text-sm text-muted-foreground">Track how streaming audiences become ticket buyers by region.</p>
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <Zap className="size-4" />
+              <h3 className="text-sm font-medium">AI-Powered Forecasting</h3>
+            </div>
+            <p className="text-sm text-muted-foreground">Predict market demand, venue fit, and touring opportunities.</p>
+          </div>
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <MapPin className="size-4" />
+              <h3 className="text-sm font-medium">Market Intelligence</h3>
+            </div>
+            <p className="text-sm text-muted-foreground">City-level fan density, venue analysis, and pricing insights.</p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2">
               <Bell className="size-4" />
-              <h3 className="text-sm font-medium">Stay updated</h3>
+              <h3 className="text-sm font-medium">Smart Alerts</h3>
             </div>
-            <p className="text-sm text-muted-foreground">Get alerts on new shows, markets, and opportunities.</p>
-          </div>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <Users className="size-4" />
-              <h3 className="text-sm font-medium">Built for promoters too</h3>
-            </div>
-            <p className="text-sm text-muted-foreground">Discover rising artists, compare markets, and plan with confidence.</p>
-          </div>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <BarChart3 className="size-4" />
-              <h3 className="text-sm font-medium">Market insights</h3>
-            </div>
-            <p className="text-sm text-muted-foreground">Data-driven recommendations based on fanbase analytics and market trends.</p>
+            <p className="text-sm text-muted-foreground">Real-time notifications for sell-outs, opportunities, and market changes.</p>
           </div>
         </div>
       </div>

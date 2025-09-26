@@ -15,7 +15,7 @@ export default function GetStarted() {
           <div className="flex items-center justify-between bg-background/95 backdrop-blur border rounded-full px-6 py-3 shadow-sm supports-[backdrop-filter]:bg-background/60">
             {/* Logo */}
             <div className="flex items-center">
-              <Link href="/" className="text-lg font-serif italic">TourPlanner</Link>
+              <Link href="/" className="text-lg font-serif italic">Touringengine</Link>
             </div>
 
             {/* Right Side Actions */}
@@ -57,7 +57,7 @@ export default function GetStarted() {
       <footer className="py-8 px-6 border-t">
         <div className="container mx-auto max-w-4xl text-center">
           <p className="text-muted-foreground">
-            © 2024 TourPlanner. All rights reserved.
+            © 2024 Touringengine. All rights reserved.
           </p>
         </div>
       </footer>

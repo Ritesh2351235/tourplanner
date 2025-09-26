@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Sun, Moon, ArrowUp, Mail, Github, Twitter, Heart } from "lucide-react";
+import { Sun, Moon, ArrowUp } from "lucide-react";
 import { useTheme } from "next-themes";
 
 function handleScrollTop() {
@@ -42,133 +42,41 @@ const ThemeToggle = () => {
   );
 };
 
-const navigation = {
-  sections: [
-    {
-      name: "Product",
-      items: [
-        { name: "Features", href: "#features" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "Documentation", href: "#docs" },
-      ],
-    },
-    {
-      name: "Resources",
-      items: [
-        { name: "Components", href: "#components" },
-        { name: "Templates", href: "#templates" },
-        { name: "Examples", href: "#examples" },
-      ],
-    },
-    {
-      name: "Community",
-      items: [
-        { name: "Discord", href: "#discord" },
-        { name: "GitHub", href: "#github" },
-        { name: "Blog", href: "#blog" },
-      ],
-    },
-    {
-      name: "Company",
-      items: [
-        { name: "About", href: "#about" },
-        { name: "Contact", href: "#contact" },
-        { name: "Privacy", href: "#privacy" },
-      ],
-    },
-  ],
-};
 
-const Underline = `hover:-translate-y-1 border border-dotted rounded-xl p-2.5 transition-transform`;
 
 export default function Footer() {
   return (
     <footer className="border-t px-2">
       <div className="relative mx-auto grid max-w-4xl items-center justify-center gap-6 p-10 pb-0 md:flex">
         <Link href="/">
-          <span className="text-lg font-serif italic">TourPlanner</span>
+          <span className="text-lg font-serif italic">Touringengine</span>
         </Link>
         <p className="bg-transparent text-center text-xs leading-4 text-muted-foreground md:text-left">
-          Welcome to TourPlanner, where tour planning meets data-driven insights.
-          We&apos;re passionate about helping artists and promoters plan successful tours.
-          Our mission is to provide the best cities, venues, and ticket ranges using
-          fanbase and market insights, so every show is a success. Built with Next.js 15,
-          React 19, and modern web technologies.
+          Welcome to Touringengine, where live touring meets real-time intelligence.
+          We&apos;re passionate about helping artists and promoters transform their data into
+          actionable insights. Our mission is to unlock new audiences, grow global markets,
+          and discover limitless possibilities for live music.
         </p>
       </div>
 
-      <div className="mx-auto max-w-4xl px-6 py-10">
-        <div className="border-b border-dotted"></div>
-        <div className="py-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {navigation.sections.map((section) => (
-              <div key={section.name}>
-                <h3 className="text-sm font-semibold mb-4">{section.name}</h3>
-                <ul role="list" className="flex flex-col space-y-2">
-                  {section.items.map((item) => (
-                    <li key={item.name} className="flow-root">
-                      <Link
-                        href={item.href}
-                        className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
+      <div className="mx-auto max-w-4xl px-6 py-6">
         <div className="border-b border-dotted"></div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-y-6">
-        <div className="flex flex-wrap items-center justify-center gap-6 gap-y-4 px-6">
-          <Link
-            aria-label="Email"
-            href="mailto:hello@starterkit.dev"
-            rel="noreferrer"
-            target="_blank"
-            className={Underline}
-          >
-            <Mail strokeWidth={1.5} className="h-5 w-5" />
-          </Link>
-          <Link
-            aria-label="GitHub"
-            href="https://github.com/starterkit"
-            rel="noreferrer"
-            target="_blank"
-            className={Underline}
-          >
-            <Github className="h-5 w-5" />
-          </Link>
-          <Link
-            aria-label="Twitter"
-            href="https://twitter.com/starterkit"
-            rel="noreferrer"
-            target="_blank"
-            className={Underline}
-          >
-            <Twitter className="h-5 w-5" />
-          </Link>
-        </div>
+      <div className="flex flex-wrap justify-center gap-y-6 py-6">
         <ThemeToggle />
       </div>
 
-      <div className="mx-auto mb-10 mt-10 flex flex-col justify-between text-center text-xs md:max-w-4xl">
+      <div className="mx-auto mb-10 mt-4 flex flex-col justify-between text-center text-xs md:max-w-4xl">
         <div className="flex flex-row items-center justify-center gap-1 text-muted-foreground">
           <span>© </span>
           <span>{new Date().getFullYear()}</span>
-          <span>Made with</span>
-          <Heart className="text-red-500 mx-1 h-4 w-4 animate-pulse fill-current" />
-          <span>by developers, for developers</span>
-          <span>-</span>
           <span className="hover:text-foreground cursor-pointer transition-colors">
-            <Link aria-label="TourPlanner" className="font-serif italic" href="/">
-              TourPlanner
+            <Link aria-label="Touringengine" className="font-serif italic" href="/">
+              Touringengine
             </Link>
           </span>
+          <span>- All rights reserved</span>
         </div>
       </div>
     </footer>

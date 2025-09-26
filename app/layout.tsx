@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TourPlanner - Tour Planning Made Simple",
-  description: "TourPlanner shows you the best cities, venues, and ticket ranges using your fanbase and market insights, so every show is a success",
+  title: "Touringengine - Transform Live Touring with Real-Time Intelligence",
+  description: "Touringengine transforms fragmented touring data into actionable insights. Unlock new audiences, grow global markets, and discover limitless possibilities for live music.",
 };
 
 export default function RootLayout({

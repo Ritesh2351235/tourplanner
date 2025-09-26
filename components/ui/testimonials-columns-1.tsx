@@ -53,7 +53,7 @@ export const TestimonialsColumn = (props: {
 
 const testimonials = [
   {
-    text: "TourPlanner transformed our tour planning process. The venue insights and market data saved us weeks of research time.",
+    text: "Touringengine transformed our tour planning process. The venue insights and market data saved us weeks of research time.",
     image: "https://randomuser.me/api/portraits/women/1.jpg",
     name: "Sarah Chen",
     role: "Frontend Developer",
@@ -71,7 +71,7 @@ const testimonials = [
     role: "UI/UX Designer",
   },
   {
-    text: "TourPlanner's data-driven approach helped us plan our tour 3x faster. The venue recommendations were exactly what we needed.",
+    text: "Touringengine's data-driven approach helped us plan our tour 3x faster. The venue recommendations were exactly what we needed.",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
     name: "David Kim",
     role: "Startup Founder",
@@ -89,7 +89,7 @@ const testimonials = [
     role: "DevOps Engineer",
   },
   {
-    text: "Our artist clients now have data-backed tour plans. TourPlanner is a game-changer for booking agencies.",
+    text: "Our artist clients now have data-backed tour plans. Touringengine is a game-changer for booking agencies.",
     image: "https://randomuser.me/api/portraits/women/7.jpg",
     name: "Jessica Miller",
     role: "Agency Owner",
@@ -101,7 +101,7 @@ const testimonials = [
     role: "Senior Developer",
   },
   {
-    text: "Switching to TourPlanner reduced our failed shows by 40%. The market insights made all the difference.",
+    text: "Switching to Touringengine reduced our failed shows by 40%. The market insights made all the difference.",
     image: "https://randomuser.me/api/portraits/women/9.jpg",
     name: "Lisa Chang",
     role: "QA Lead",
@@ -126,7 +126,7 @@ const Testimonials = () => {
           <h2 className="text-foreground text-balance text-3xl font-semibold md:text-4xl">
             <span className="text-muted-foreground">See what our community has to say about</span>
             <br />
-            <span className="font-serif italic">TourPlanner</span>
+            <span className="font-serif italic">Touringengine</span>
           </h2>
         </motion.div>
 

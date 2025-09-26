@@ -57,7 +57,7 @@ const DeveloperToolsIllustration = () => {
       <div className="w-fit">
         <div className="flex items-center gap-2 mb-2">
           <Terminal className="size-3.5 text-foreground" />
-          <span className="text-sm font-medium">TourPlanner CLI</span>
+          <span className="text-sm font-medium">Touringengine CLI</span>
         </div>
         <p className="mt-2 line-clamp-2 text-sm">npx create-starterkit-app my-project --template=full</p>
         <ul
